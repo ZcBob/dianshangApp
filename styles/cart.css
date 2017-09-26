@@ -1,0 +1,313 @@
+html, body {
+	font-size: 15px;
+}
+/******************header******************/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3rem;
+  line-height: 3rem;
+  background: #f5f5f5;
+  max-width: 540px;
+  border-bottom: 1px solid #dbdbdb;
+  z-index: 999;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+header .headW {
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  position: relative;
+}
+header .headW .back {
+  position: absolute;
+  left: 0;
+  color: #fff;
+}
+header .headW .back a {
+  display: inline-block;
+  padding: 0;
+  width: 36px;
+}
+header .headW .back img{
+  width: 12px;
+  vertical-align: middle;
+  border: none;
+}
+header .headW .title {
+  font-weight: 400;
+  overflow: hidden;
+  width: 68%;
+  margin: 0 auto;
+  font-size: 16px;
+}
+header .headW .sitebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .headW .sitebar a {
+  display: inline-block;
+  width: 42px;
+  height: 30px;
+  padding-top: 14px;
+  line-height: 20px;
+}
+header .headW .sitebar img {
+  vertical-align: top;
+  border: none;
+  width: 20px;
+  line-height: 20px;
+}
+
+/******************goods-list******************/
+.good-list {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 3.8rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #e3e5e9;
+  background: #f5f5f5;
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  max-width: 540px;
+  overflow: hidden;
+}
+.good-list .good-item {
+	height: 11rem;
+	margin-bottom: 10px;
+	background: white;
+}
+.good-list .txtl {
+	float: left;
+	width: 12%;
+}
+.good-list .txtl input {
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+.good-list .chkbox{
+	  width: 2rem;
+    height: 2rem;
+    background-image: url(../images/c_checkbox_off.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    display: block;
+    margin: 3rem auto 0;
+    background-color: transparent;
+}
+.chkbox:checked {
+    background-image: url(../images/c_checkbox_on.png);
+}
+.good-item .imgW {
+	float: left;
+	width: 30%;
+	height: 7rem;
+  margin: 1rem 1rem 1rem 0;
+	text-align: right;
+}
+.imgW img {
+	width: 100%;
+} 
+.cnt {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: calc(100% - 20px);
+	padding: 10px;
+	box-sizing: border-box;
+	margin-top: 1rem;
+}
+.cnt p {
+	font-size: 12px;
+}
+.info .goods_price {
+	color: red;
+	font-size: 20px;
+	padding: 10px;
+}
+.count {
+	display: none;
+}
+.info>span {
+	 font-size: 20px;
+	 float: left;
+}
+.rediger {
+	  float: right;
+	  width: 2rem;
+    height: 2rem;
+    background: url(../images/edit.png)no-repeat;
+    background-size: 1.5rem;
+}
+.cnt .count {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+.count .count-box {
+	height: 25%;
+}
+.count .operate {
+	float: left;
+	width: 20%;
+	height: 100%;
+	margin: 0 2px;
+	border: 1px solid #eee;
+}
+.count .minus {
+	background: url(../images/minusN.png) no-repeat;
+	background-size: 30px 4px;
+	background-position: 5px 13px;
+}
+.count .plus {
+	background: url(../images/addN.png) no-repeat;
+	background-size: 30px 30px;
+	background-position: 5px 2px;
+}
+.count input {
+	float: left;
+	width: 40%;
+	height: 100%;
+	text-align: center;
+	border: 1px solid #eee;
+}
+.count .remove {
+	float: left;
+	width: 3rem;
+	height: 3rem;
+	margin: 2rem 0 0 3rem;
+	background: url(../images/del.png) right no-repeat;
+	background-size: 30px 30px;
+	text-indent: -99rem;
+}
+.count .finir {
+	float: right;
+	width: 5rem;
+	height: 3rem;
+	line-height: 3rem;
+	margin-top: 2rem ;
+	font-size: 20px;
+	text-align: center;
+	background: #eee;
+}
+
+
+/*遮幕*/
+.f_mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	display: none;
+}
+/*是否删除该商品*/
+.confirmerRemove {
+	position: fixed;
+	left: 50%;
+	top: 35%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 13.6rem;
+	background: white;
+	display: none;
+}
+.confirmerRemove .content {
+    height: 9rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 9rem;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 2.1rem;
+    color: #E0E0E0;
+    border-bottom: 1px solid #dcdcdc;
+    box-sizing: border-box;
+}
+.confirmerRemove .btns {
+	width: 100%;
+	height: 4.6rem;
+	line-height: 4.6rem;
+}
+.btns span {
+	display: inline-block;
+	width: 49%;
+	height: 100%;
+	font-size: 20px;
+	text-align: center;
+}
+#m_cancel {
+	border-right: 1px solid #eee ;
+}
+/******************footer******************/
+footer {
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  background: #F8F8F8;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  max-width: 540px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .isAll,footer .total,footer .submit {
+  display: block;
+  float: left;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  
+  font-size: 12px;
+}
+footer .isAll { width: 25%; text-align: left;}
+.isAll input {
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+    border: 0;
+    border-radius: 0;
+}
+.isAll .selectioner {
+	  float: right;
+		width: 2rem;
+    height: 2rem;
+    background-image: url(../images/c_checkbox_off.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    display: block;
+    margin: 6px 12px 0 0 ;
+    background-color: transparent;
+}
+.selectioner:checked {
+    background-image: url(../images/c_checkbox_on.png);
+}
+footer .total { width: 50%; color: red;font-size: 20px;}
+footer .submit {
+  width: 25%;
+  background: #f00;
+  color: #fff;
+  font-weight: 700;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>订单结算</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+  <script src="js/jquery-3.2.1.js"></script>
+</head>
+<body>
+  <!--header-->
+  <div class="page">
+    <div class="page-order">
+    <div class="title">
+      <a href="/cart.html" class="back"></a>
+      <h1>订单结算</h1>
+    </div>
+    <section class="content">
+      <p class="selcted-address">
+        请选择收货地址
+      </p>
+      <!--下订单-->
+      <div id="orderList" class="orderList">
+        <div class="order-hd">
+        </div>
+        <ul>
+        </ul>
+      </div>
+    </section>
+    <!--提交订单-->
+    <div class="submitW">
+      <p class="realPay"><span>实付: <em></em></span></p>
+      <a class="submit">提交订单</a>
+    </div>
+  </div>
+    <div class="page-address">
+    <div class="title">
+      <span id="back" class="back"></span>
+      <h1>收货地址</h1>
+    </div>
+    <section class="content">
+      <div class="add-list"></div>
+    </section>
+    <div class="addBtn">
+      <p>添加新地址</p>
+    </div>
+  </div>
+    <div class="page-newadd">
+    <div class="title">
+      <span class="back"></span>
+      <h1>新增收货地址</h1>
+    </div>
+    <ul>
+      <li class="consignee"><span>收货人:</span><input type="text"></li>
+      <li class="mobile"><span>手&nbsp;&nbsp;&nbsp;机:</span><input type="text"></li>
+      <li class="tel"><span>固&nbsp;&nbsp;&nbsp;话:</span><input type="text"></li>
+      <li class="province"><span>省&nbsp;&nbsp;&nbsp;份:</span><input type="text"></li>
+      <li class="city"><span>城&nbsp;&nbsp;&nbsp;市:</span><input type="text"></li>
+      <li class="address"><span>地&nbsp;&nbsp;&nbsp;区:</span><input type="text" placeholder="地区 街道 楼牌号"></li>
+      <li class="zip_code"><span>邮&nbsp;&nbsp;&nbsp;编:</span><input type="text"></li>
+    </ul>
+    <div class="address-tips">
+      <p>温馨提示:</p>
+      <p>手机和固定电话选择其中一项填写即可</p>
+    </div>
+    <div class="save-button">
+      <p>保存地址</p>
+    </div>
+  </div>
+    <!--添加订单成功-->
+    <div class="add-success">
+      添加订单成功
+    </div>
+</div>
+</body>
+  <script src="js/zepto.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/checkout.js"></script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>产品详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/pro_center.css">
+</head>
+<body>
+  <!--header-->
+  <header>
+    <div class="headW">
+      <div class="back">
+        <a onclick="javascript:onclick=location.href='/'">
+        	<img src="images/new-back.png" alt="">
+        </a>
+      </div>
+      <h1 class="title">商品详情</h1>
+      <div class="sitebar">
+        <a href="/pro_list.html"><img src="images/ico-menu.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <!--大图片-->
+  <section class="pro-detail">
+    <div id="good"></div>
+  </section>
+  <!--加入购物车成功-->
+  <div class="add-success">
+    加入购物车成功
+  </div>
+  <div class="token-invalid">
+    请重新登录!
+  </div>
+  <!--底部购买-->
+  <footer>
+    <div class="pro-buy">
+      <!--<div class="backtop"></div>-->
+      <ul>
+        <li><a href="javascript:" class="collect"><span class="star">收藏</span></a></li>
+        <!--<li><a href="javascript:" class="cart">购物车<span>8</span></a></li>-->
+        <li><a href="/cart.html" class="cart">购物车</a></li>
+        <li><a href="javascript:" class="add-cart">加入购物车</a></li>
+        <li><a href="javascript:" class="buy-now">立即购买</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/pro_center.js"></script>
+</html>

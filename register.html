@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>优购注册</title>
+		<link rel="stylesheet" href="styles/cssreset-min.css"/>
+		<link rel="stylesheet" href="styles/register.css"/>
+		<link rel="stylesheet" href="styles/base.css"/>
+	</head>
+	<body>
+		<section id="register">
+			<div class="head">
+				<div class="back">
+					<h2 class="userRegister"><a href="login.html"></a>注册</h2>
+				</div>
+			</div>
+			<form class=register>
+				<div id="registerUserName">
+					<span>用户名:</span>
+					<input type="text" name="username" class="registerName" placeholder="请输入用户名" >
+				</div>
+				<div id="registerUserPassword">
+					<span>密码:</span>
+					<input type="text" name="password" class="registerPassword" placeholder="请输入密码" >
+				</div>
+				<div id="confirmPassword">
+					<span>确认密码:</span>
+					<input type="text" name="password" class="confirmPassword" placeholder="请确认密码" >
+				</div>
+				<div id="phone">
+					<span>手机号码:</span>
+					<input type="text" name="phone" class="userPhone" placeholder="请输入手机号码" >
+				</div>
+				<div class="nowRegister">
+					<a href="">注册</a>
+				</div>
+			</form>
+		</section>
+		
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$()
+			});
+			
+			
+			
+			
+			$(function(){
+				$('#registerUserPassword').click(function(){
+					var username = $('input[name="username"]').val();
+					var password = $('input[name="password"]').val();
+					if (password.length < 6 || password.length > 20){
+						alert('密码长度在6到20位');
+						return;
+					}
+					console.log([username, password]);
+					$ajax({
+						"url":"http://h6.duchengjiu.top/shop/api_user.php",
+						"type":"POST",
+						"dataType":"json",
+						"data":{
+							"status":"register",
+							"username": username,
+							"password": password
+						},
+						"success":function(response){
+							console.log(response);
+						}
+					});
+				});
+			});
+		</script>
+	</body>

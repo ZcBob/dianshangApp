@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+#register{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: white;
+}
+#register .head{
+	width: 100%;
+	height: 44px;
+	position: fixed;
+	border: 1px solid #ddd;
+	background-color: #F8F8F8;
+}
+#register .head .back a{
+	float: left;
+	margin: 6px 0 0 10px;
+	width: 16px;
+	height: 30px;
+	background: url(../images/back.png);
+	background-size: 16px 30px;
+}
+#register .head .back .userRegister{
+	text-align: center;
+	line-height: 44px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.head h2{
+	text-align: center;
+	line-height: 44px;
+	font-size: 18px;
+	font-weight: 400;
+}
+#register .register{
+	padding-top: 150px;
+}
+.register{
+	text-align: center;
+}
+.register span{
+	display: inline-block;
+	width: 66px;
+}
+#registerUserPassword, #confirmPassword, #phone{
+	margin-top: 10px;
+}
+.register .nowRegister{
+	width: 248px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 64px;
+	margin-top: 10px;
+	background-color: #999999;
+	text-align: center;
+	border-radius: 10px;
+}
+.register .nowRegister a{
+	color: white;
+}

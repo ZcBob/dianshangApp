@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录</title>
+		<link rel="stylesheet" href="styles/reset.css"/>
+		<link rel="stylesheet" href="styles/base.css"/>
+		<link rel="stylesheet" href="styles/login.css"/>
+		
+	</head>
+	<body>
+		<header>
+			<h2 class="title">登录</h2>
+		</header>
+		<section class="myLogin">
+			<form class="login">
+				<div class="loginUserName">
+					<span>账号:</span>
+					<input type="text" name="username" class="loginName" placeholder="账号/手机/邮箱" >
+				</div>
+				<div class="loginUserPassword">
+					<span>密码:</span>
+					<input type="password" name="password" class="loginPassword" placeholder="请输入密码" >
+				</div>
+				<div class="autoLogin">
+					<input type="checkbox" value="1" checked="checked"/>
+					<span>自动登录</span>
+					<span class="register"><a href="register.html">新用户注册</a></span>
+				</div>
+				<div class="nowLogin" id="nowLogin">
+					登录
+				</div>
+			</form>
+		</section>
+		
+		
+		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

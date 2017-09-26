@@ -1,0 +1,68 @@
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+header{
+	width: 100%;
+	height: 44px;
+	position: fixed;
+	border: 1px solid #ddd;
+	background-color: #F8F8F8;
+}
+header h2{
+	text-align: center;
+	line-height: 44px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.myLogin{
+	padding-top: 150px;
+	width: 100%;
+}
+.loginUserPassword{
+	padding-top: 20px;
+}
+.loginUserName span, .loginUserPassword span {
+	display: block;
+	margin: 10px 0;
+}
+.loginUserName .loginName{
+	width: 97%;
+	height: 2rem;
+	text-indent: 1rem;
+}
+.loginUserPassword .loginPassword{
+	width: 97%;
+	height: 2rem;
+	text-indent: 1rem;
+}
+.autoLogin {
+	display: flex;
+	margin: 10px 0;
+}
+.autoLogin input {
+	flex: 0 0 10%;
+}
+.autoLogin span{
+	flex: 0 0 45%;
+	font-size: 12px;
+	line-height: 21px;
+}
+.autoLogin .register a {
+	float: right;
+	margin-right: 10px;
+}
+.login{
+	width: 65%;
+	margin: 0 auto;
+}
+.login .nowLogin{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	background-color: #999999;
+	text-align: center;
+	border-radius: 10px;
+	color: white;
+}

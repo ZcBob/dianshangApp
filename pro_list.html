@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/pro_list.css"/>
+	</head>
+	<body>
+		<!--header的内容-->
+		<header>
+		    <div class="soso">
+		    	<!--返回上一页-->
+		    	<div class="retourner">
+		    		<a onclick="javascript:onclick=location.href='/'"></a>
+		    	</div>
+		        <!--搜索-->
+		        <div class="soso_box">
+		           <input type="text" id="search" placeholder="搜索">
+		        </div>
+		        <!--用户-->
+		        <div class="user">
+		           <span id="btn"></span>
+		        </div>
+		        <div class="search-btn">	
+		        	<button id="searchBtn">搜索</button>
+		        </div>
+		    </div>
+		</header>
+		<nav class="t-nav">
+			<ul>
+				<li>
+					<a href="index.html">首页</a>
+				</li>
+				<li>
+					<a href="/suyi/moi-shop/search.html">搜索</a>
+				</li>
+				<li>
+					<a href="pro_list.html">分类</a>
+				</li>
+				<li>
+					<a href="javascript:onclick=location.href='cart.html#callbackurl='+ location.href">购物车</a>
+				</li>
+				<li>
+					<a href="javascript:onclick=location.href='login.html#callbackurl='+ location.href">我的</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="main-box">
+			<nav class="list-nav">
+				<div class="left-list-box" id="leftListBox">
+					<ul></ul>
+				</div>
+			</nav>
+			<div class="list-content">
+				<div class="right-list-box">
+					<ul class="right-over">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zeptoWithFx.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+	    
+	    <script src="js/pro-list.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

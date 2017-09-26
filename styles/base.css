@@ -1,0 +1,13 @@
+html {
+  font-size: 15px;
+}
+@media screen and (min-width: 400px){
+  html{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px){
+  .swiper-container{
+    max-height: 10rem;
+  }
+}

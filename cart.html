@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>购物车</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/cart.css">
+</head>
+<body>
+<!--header-->
+  <div class="wrap">
+  <header>
+    <div class="headW">
+      <div class="back">
+        <a onclick="javascript=location.href='/pro_center.html'"><img src="images/new-back.png" alt=""></a>
+      </div>
+      <h1 class="title">购物车</h1>
+      <div class="sitebar">
+        <a href=""><img src="images/ico-menu.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <!--全选-->
+  <section class="good-list" id="good-list">
+  	
+  </section>
+ 
+  <!--footer-->
+  <footer class="totalW">
+    <span class="isAll">全选：
+       <input type="checkbox" id="opter" class="selectioner" />
+    </span>
+    <span class="total">总计</span>
+    <div class="submit">去结算</div>
+  </footer>
+  </div>
+  <div class="f_mask"></div>
+  <div class="confirmerRemove">
+  	 <div class="content">你确定要删除该商品吗？</div>
+  	 <div class="btns">
+  	 	  <span id="m_cancel">取消</span>
+  	 	  <span id="m_ok">确定</span>
+  	 </div>
+  </div>
+</body>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/zepto.js"></script>
+<script src="js/api.js"></script>
+  <script src="js/cart.js"></script>
+</html>

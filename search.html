@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/search.css"/>
+	</head>
+	<body>
+		<!--header的内容-->
+		<header>
+		    <div class="soso">
+		    	<!--返回上一页-->
+		    	<div class="retourner">
+		    		<a onclick="javascript=location.href ='/pro_list.html'"></a>
+		    	</div>
+		        <!--搜索-->
+		        <div class="soso_box">
+		           <input type="text" id="search" placeholder="搜索">
+		        </div>
+		        <!--用户-->
+		        <div class="user">	
+		        	<button id="screen-btn">筛选</button>
+		        </div>
+		        <div class="search-btn">	
+		        	<button id="searchBtn">搜索</button>
+		        </div>
+		    </div>
+		</header>
+		<section id="nav" class="common" dd_name="排序区" style="top: 0px;">
+			<ul>    
+				<li>
+					<a href="javascript:void(0);" data-status="default_0" class="" dd_name="默认">默认</a>
+				</li>   
+				<li>
+					<a href="javascript:void(0);" data-status="sales_1" dd_name="销量">销量</a>
+				</li>   
+				<li>
+					<a href="javascript:void(0);" data-status="price_" data-up="0" data-down="1" dd_name="价格(包括价格升序和降序)" class="on">
+						<del>价格
+							<i class="arrow_up on"></i>
+							<i class="arrow_down"></i>
+						</del>
+					</a>
+				</li>  
+				<li>
+					<a href="javascript:void(0);" data-status="score_1" dd_name="好评">好评</a>
+				</li> 
+				<li>
+					<a href="javascript:void(0);" data-status="publishdate_0" dd_name="时间(包括出版时间和最新)">出版时间</a>
+				</li> 
+			</ul> 
+		</section>
+		<section class="list" id="j_list" data_name="单品列表">
+			
+		</section>
+		<a id="gotTo" href="javascript:window.scrollTo(0, 0)" data_name="回到顶部">顶部</a>
+		
+		<script src="js/zeptoWithFx.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/search.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

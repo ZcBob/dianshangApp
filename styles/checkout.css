@@ -1,0 +1,366 @@
+/**********************header*********************/
+body, html{
+  width:100%;
+  height:100%;
+}
+.page {
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+.page .add-success {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 44%;
+  z-index: 999;
+  display: none;
+  width: 148px;
+  height: 58px;
+  text-align: center;
+  line-height: 58px;
+  border-radius: 5px;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+}
+.page-order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 5;
+  /*height: 100%;*/
+}
+.title{
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 540px;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  z-index: 666;
+}
+.title .back {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: url(../images/back.png) center center no-repeat;
+  background-size: 15px 27px;
+}
+.title h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  width: 86%;
+  line-height: 3rem;
+  padding-left:3rem;
+  font-size: 16px;
+  text-align: center;
+}
+/**********************page1 => content*********************/
+.page-order .content {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 0;
+}
+.page-order .content .selcted-address {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.page-order .content .selcted-address::before {
+  content: '';
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: url(../images/arrow_r.png) no-repeat;
+  background-size: 15px 15px;
+}
+.page-order .content .selcted-address span{
+  width: 40%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+/**********************page-order => orderList*********************/
+.orderList .order-hd {
+  width: 100%;
+  height: 4rem;
+  /*background: skyblue;*/
+  padding:5px 25px 5px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.orderList .order-hd .h-title{
+  font-size: 16px;
+  line-height: 26px;
+  color: #ff463c;
+}
+.orderList .order-hd p{
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+.orderList .order-hd .subtotal em{
+  color: #ff463c;
+  padding-right: 10px;
+}
+.orderList .item .order-info {
+  width: 100%;
+  height: 4.6rem;
+  padding: 10px;
+  /*background-color: orange;*/
+  border-bottom: 1px solid #ddd;
+}
+.orderList .item .order-info .imgW {
+  float: left;
+  width: 4.6rem;
+  height: 4.6rem;
+}
+.orderList .item .order-info .imgW img{
+  width: 100%;
+}
+.orderList .item .order-info .proW {
+  width: 100%;
+  height: 4.6rem;
+  padding-left: 5rem;
+}
+.orderList .item .order-info .proW .goods-name {
+  font-size: 12px;
+  height: 36px;
+  width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 18px;
+  color: #464646;
+}
+.orderList .item .order-info .proW .priceW {
+  font-size: 12px;
+  line-height: 14px;
+}
+.orderList .item .order-info .proW .price {
+  color: #ff463c;
+  padding: 0 6px;
+}
+.orderList .item .order-info .proW .num {
+  color: #666;
+}
+/**********************page-address*********************/
+.page-address {
+  position: absolute;
+  left:0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: #fff;
+  overflow: scroll;
+  /*overflow: hidden;*/
+}
+.page-address .addBtn {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  max-width: 540px;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  z-index: 666;
+}
+.page-address .addBtn::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 55%;
+  right: 31%;
+  transform: translateY(-50%);
+  background: url(../images/red_addr_plus.png) no-repeat;
+  background-size: 15px 15px;
+}
+.page-address .item .edit-addr,
+.page-address .item .del-addr {
+  position: relative;
+  width: 50%;
+  height: 3rem;
+  line-height: 3rem;
+  float: left;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  color: #666;
+  text-align: center;
+}
+.page-address .item .edit-addr {
+  border-right: 1px solid #ddd;
+}
+.page-address .item .edit-addr i,
+.page-address .item .del-addr i{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 56px;
+  padding-left: 1rem;
+}
+.page-address .item .edit-addr i {
+  background: url(../images/edit.png) left center no-repeat;
+  background-size: 19px 19px;
+}
+.page-address .item .del-addr i{
+  background: url(../images/delete.png) left center no-repeat;
+  background-size: 19px 19px;
+}
+/**********************pageaddress => content*********************/
+.page-address .content {
+  width: 100%;
+  max-width:  540px;
+  margin: 0 auto;
+  /*overflow: scroll;*/
+  height: auto;
+  padding: 3rem 0;
+}
+.add-list {
+  width: 100%;
+  height:auto;
+}
+.add-list .item {
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  border-top: 1px solid #ddd;
+}
+.add-list .item p{
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid #ddd;
+  padding-left: 3.5rem;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+.add-list .item input {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-appearance: none;
+  outline: none;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: url(../images/c_checkbox_off.png) center center no-repeat;
+  background-size: 20px 20px;
+}
+.add-list .item input:checked {
+  background: url(../images/c_checkbox_on.png) center center no-repeat;
+  background-size: 20px 20px;
+}
+/**********************page-newadd*********************/
+.page-newadd {
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow: hidden;
+}
+.page-newadd .address-tips {
+  width: 100%;
+  height: 3rem;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  color: #a0a0a0;
+}
+.page-newadd .address-tips p {
+  line-height: 1.5rem;
+}
+.page-newadd ul {
+  width: 100%;
+  padding-top: 3rem;
+  list-style: none;
+}
+.page-newadd ul li {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 0 8px;
+  line-height: 3rem;
+  color: #a0a0a0;
+}
+.page-newadd ul li input {
+  width: 70%;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+}
+.page-newadd .save-button {
+  width: 100%;
+  box-sizing: border-box;
+  padding:20px 10px;
+}
+.page-newadd .save-button p {
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  background-color: #ff463c;
+  color: #fff;
+  border-radius: 5px;
+}
+/**********************submitW*********************/
+.submitW {
+  position: fixed;
+  bottom: 0;
+  /*left: 50%;*/
+  /*transform: translatex(-50%);*/
+  max-width: 540px;
+  width: 100%;
+  height: 3rem;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 5px;
+}
+.submitW .realPay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 3rem;
+  line-height: 3rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+.submitW .realPay span em{
+  color: #ff463c;
+}
+.submitW .submit {
+  float: right;
+  width: 90px;
+  height: 100%;
+  line-height: calc(3rem  - 10px);
+  text-align: center;
+  background-color: #ff463c;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 5px;
+  color: #fff;
+}

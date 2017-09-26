@@ -1,0 +1,72 @@
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shop</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+  </head>
+  <body>
+  <!--header的内容-->
+  <header>
+    <div class="soso">
+      <!--logo-->
+      <a href="/" class="logo"></a>
+      <!--搜索-->
+      <div class="soso_box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <!--用户-->
+      <div class="user">
+        <a href="javascript:onclick=location.href='/pro_list.html'">分类</a>
+      </div>
+    </div>
+  </header>
+  <div class="carousel">
+	    <div class="swiper-container">
+			  <ul id="carousel-list" class="swiper-wrapper">
+			  </ul>
+		 	<div class="swiper-pagination"></div>
+	   </div>
+  </div>
+  <!--热门商品-->
+  <div class="hot">
+    <ul class="hot-list" id="hot-list"></ul>
+    <!--more-->
+    <div class="more-container"><input type="button" value="更多商品" id="more"></div>
+  </div>
+
+  <!--底部导航-->
+  <div class="newbuttonTab">
+    <ul>
+      <li class="tabL">
+        <span class="imgW">
+          <a href="index.html"><img src="images/home.png"><br>首页</a>
+        </span>
+      </li>
+      <li class="tabL">
+        <span class="imgW"><a href="/pro_list.html"><img src="images/catergry.png"><br>分类</a>
+        </span>
+      </li>
+      <li class="tabL">
+        <span class="imgW"><a href="javascript:onclick=location.href='/cart.html'"><img src="images/cart.png"><br>购物车</a>
+        </span>
+      </li>
+      <li class="tabL">
+        <span class="imgW"><a href="javascript:onclick=location.href='login.html#callbackurl='+ location.href"><img src="images/user.png"><br>我的</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+    
+    <script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/api.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper.animate.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>	
